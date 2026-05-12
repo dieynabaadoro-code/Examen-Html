@@ -1,0 +1,612 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+    color: #1F2937;
+}
+
+/* ---- header ---- */
+
+.header {
+    background-color: #111827;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 3px solid #92400E;
+}
+
+.logo {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 20px;
+    color: #D97706;
+    text-decoration: none;
+}
+
+.logo span {
+    color: white;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+    
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.nav li a:hover {
+    color: #D97706;
+}
+
+/* ---- hero ---- */
+
+.hero {
+    width: 90%;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin: 40px auto;
+    background-color: #92400E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: white;
+    font-size: 1rem;
+    max-width: 550px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.hero-boutons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ---- boutons ---- */
+
+.btn1 {
+    background-color: #D97706;
+    color: white;
+    padding: 12px 25px;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn1:hover {
+    background-color: white;
+    color: #92400E;
+}
+
+.btn2 {
+    background-color: transparent;
+    color: white;
+    padding: 12px 25px;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn2:hover {
+    background-color: white;
+    color: #111827;
+}
+
+.btn3 {
+    background-color: #065F46;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn3:hover {
+    background-color: #92400E;
+}
+
+/* ---- titres de section ---- */
+
+.titre {
+    text-align: center;
+    margin: 40px auto 10px;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.8rem;
+    color: #92400E;
+}
+
+.souligne {
+    width: 60px;
+    height: 4px;
+    background-color: #D97706;
+    border-radius: 2px;
+    margin: 8px auto 30px;
+}
+
+/* ---- section presentation ---- */
+
+.presentation {
+    width: 90%;
+    margin: 0 auto 50px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #FEF3C7;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.img-presentation {
+    width: 280px;
+    height: 280px;
+    border: 2px solid black;
+    border-radius: 12px;
+    background-color: #92400E;
+}
+
+.texte-presentation h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.6px;
+    color: #92400E;
+    margin-bottom: 12px;
+}
+
+.texte-presentation p {
+    color: #6B7280;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* ---- cartes produits ---- */
+
+.grille {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+    width: 90%;
+    margin: 0 auto 50px;
+}
+
+.carte {
+    width: 25%;
+    min-width: 220px;
+    border: 2px solid black;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.carte-image {
+    width: 100%;
+    height: 180px;
+    border-bottom: 2px solid black;
+    background-size: cover;
+    background-position: center;
+}
+
+.carte-texte {
+    padding: 15px;
+}
+
+.carte-texte h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.carte-texte .cat {
+    font-size: 0.75rem;
+    color: #6B7280;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.carte-texte p {
+    font-size: 0.82rem;
+    color: #6B7280;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.carte-texte .prix {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #D97706;
+    margin-bottom: 12px;
+}
+
+/* ---- section avantages ---- */
+
+.avantages {
+    background-color: #111827;
+    padding: 50px 40px;
+    text-align: center;
+    
+}
+
+.avantages .titre {
+    color: white;
+}
+
+.grille-avantages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.box-avantage {
+    width: 100%;
+    min-width: 180px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 25px ;
+    
+}
+
+
+
+.box-avantage h3 {
+    color: #D97706;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.box-avantage p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+
+}
+
+/* ---- cartes collections ---- */
+
+.grille-collections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+    width: 90%;
+    margin: 0 auto 50px;
+}
+
+.carte-collection {
+    width: 25%;
+    min-width: 250px;
+    border: 2px solid black;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.collection-image {
+    width: 100px;
+    height: 180px;
+    border-bottom: 2px solid black;
+    background-size: cover;
+    background-position: center;
+    background-color: #92400E;
+}
+
+.collection-texte {
+    padding: 15px;
+}
+
+.collection-texte h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 10px;
+    margin-bottom: 8px;
+    color: #92400E;
+}
+
+.collection-texte p {
+    font-size: 0.82rem;
+    color: #6B7280;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+/* ---- page a propos ---- */
+
+.bloc {
+    width: 90%;
+    margin: 0 auto 25px;
+    background-color: #FEF3C7;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.bloc h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.4rem;
+    color: #92400E;
+    margin-bottom: 12px;
+}
+
+.bloc p {
+    color: #6B7280;
+    line-height: 1.8;
+}
+
+.grille-valeurs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto 50px;
+}
+
+.box-valeur {
+    flex: 1;
+    min-width: 200px;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+.box-valeur .icone {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.box-valeur h3 {
+    color: #92400E;
+    margin-bottom: 8px;
+}
+
+.box-valeur p {
+    font-size: 0.82rem;
+    color: #6B7280;
+    line-height: 1.5;
+}
+
+/* ---- formulaire ---- */
+
+.titre-section {
+    width: 70%;
+    margin: 0 auto 50px;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 35px;
+    background-color: #FEF3C7;
+    text-align: center;
+}
+
+.groupe {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 700px;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    ;
+}
+
+.champ label {
+    display: block;
+    font-size: 0.85px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.champ input,
+.champ select,
+.champ textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 0.9px;
+    font-family: 'Poppins', Arial, sans-serif;
+    outline: none;
+    background-color: white;
+}
+
+
+
+.champ textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* ---- banniere pages internes ---- */
+
+.banniere {
+    width: 90%;
+    height: 200px;
+    background-color: #111827;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banniere h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.banniere p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 20px
+}
+
+/* ---- footer ---- */
+
+.footer {
+    background-color: #111827;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    border-top: 3px solid #92400E;
+}
+
+.footer-bloc h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #D97706;
+    font-size: 10px;
+    margin-bottom: 12px;
+}
+
+.footer-bloc p,
+.footer-bloc li {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+    line-height: 2;
+    list-style: none;
+}
+
+.footer-bloc a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.footer-bloc a:hover {
+    color: azure;
+}
+
+.footer2 {
+    background-color: #111827;
+    text-align: center;
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ---- centrer un bouton ---- */
+
+.centre {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* responsive tablette */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 20px;
+    }
+
+    .nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .carte {
+        width: 45%;
+    }
+
+    .carte-collection {
+        width: 45%;
+    }
+
+    .box-avantage {
+        width: 40%;
+    }
+
+    .form-box {
+        width: 90%;
+    }
+}
+
+/*responsive telephone */
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 1.3rem;
+    }
+
+    .carte {
+        width: 100%;
+    }
+
+    .carte-collection {
+        width: 100%;
+    }
+
+    .box-avantage {
+        width: 100%;
+    }
+
+    .box-valeur {
+        width: 100%;
+    }
+
+    .presentation {
+        flex-direction: column;
+    }
+
+    .img-presentation {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+}
