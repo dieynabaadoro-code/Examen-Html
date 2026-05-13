@@ -200,7 +200,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 25px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto 50px;
 }
 
@@ -251,7 +251,22 @@ body {
     color: #D97706;
     margin-bottom: 12px;
 }
-
+.a1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+    width: 100%;
+    margin: O auto 5Opx;
+}
+.a2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+    width: 100%;
+    margin: O auto 5Opx;
+}
 /* ---- section avantages ---- */
 
 .avantages {
